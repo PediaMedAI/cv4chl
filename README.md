@@ -1,64 +1,22 @@
-# AI4CHL Workshop Website
+# CV4CHL - CVPR 2026 Workshop on Computer Vision for Children
 
-ICLR 2025 Workshop on AI for Children
+Website for the CV4CHL workshop at CVPR 2026.
 
-**Live site:** https://pediamedai.github.io/cv4chl/
+## About
 
-## 📁 Structure
+The Workshop on Computer Vision for Children (CV4CHL) brings together pediatricians, psychologists, educationists, clinicians and computer vision researchers to discuss the future of CV design and its applications for children.
 
-```
-cv4chl/
-├── index.html              # Homepage (About)
-├── callforpapers/          # Call for Papers page
-├── organizers/             # Organizers page
-├── schedule/               # Schedule page
-└── assets/                 # All images, CSS, and JS files
-```
+## Key Topics
 
-## 🚀 Deployment
+- Vision for Child Development
+- Vision for Pediatric Healthcare
+- Vision for Education
+- Vision for Child Psychology
+- Ethics & Social Impact
 
-### Quick Start
+## Links
 
-```bash
-cd cv4chl
-git init
-git add .
-git commit -m "Initial commit"
-git branch -M main
-git remote add origin https://github.com/pediamedai/cv4chl.git
-git push -u origin main
-```
-
-Then enable GitHub Pages in repository settings:
-- Settings > Pages
-- Source: Branch `main`, Folder `/ (root)`
-
-### Update Website
-
-```bash
-# After making changes
-git add .
-git commit -m "Update content"
-git push
-```
-
-GitHub will automatically redeploy the site.
-
-## ✏️ Editing
-
-All pages are pure HTML files. Edit them with any text editor:
-
-- Homepage: `index.html`
-- Call for Papers: `callforpapers/index.html`
-- Organizers: `organizers/index.html`
-- Schedule: `schedule/index.html`
-- Styles: `assets/css/main.css`
-
-## 📝 Notes
-
-- All links point to `https://pediamedai.github.io/cv4chl/`
-- Navigation uses relative paths
-- CSS loaded from CDN (requires internet)
-- Images in `assets/` subdirectories
-
-For detailed deployment instructions in Chinese, see `部署说明.md`.
+- Workshop Website: https://pediamedai.github.io/cv4chl/
+- Previous Workshop (ICLR 2025): https://pediamedai.com/ai4chl/
+- GitHub: https://github.com/PediaMedAI
+- Contact: ai4chl@googlegroups.com
