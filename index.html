@@ -23,6 +23,20 @@
 
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
+
+  <!-- Custom CSS for hover dropdown -->
+  <style>
+    .header .dropdown:hover .dropdown-menu {
+      display: block;
+      margin-top: 0;
+    }
+    .header .dropdown-menu {
+      min-width: 180px;
+    }
+    .header .dropdown-item:hover {
+      background-color: var(--accent-color, #f0f0f0);
+    }
+  </style>
 </head>
 
 <body class="index-page">
@@ -45,9 +59,14 @@
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
 
-      <a class="cta-btn d-block" href="https://pediamedai.com/ai4chl/" target="_blank">
-        Previous Workshop: ICLR 2025 AI4CHL
-      </a>
+      <div class="dropdown">
+        <a class="cta-btn d-block dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          Previous
+        </a>
+        <ul class="dropdown-menu dropdown-menu-end">
+          <li><a class="dropdown-item" href="https://pediamedai.com/ai4chl/" target="_blank">ICLR 2025 AI4CHL</a></li>
+        </ul>
+      </div>
     </div>
   </header>
   <!-- /Header -->
@@ -182,16 +201,16 @@
 
       <div class="container">
         <p>
-          The Workshop on Computer Vision for Children (CV4CHL) at CVPR 2026 invites submissions presenting innovative research in computer vision that addresses key challenges in child education, psychology, pediatrics, child development, social impact, and ethics. We also welcome broader research exploring the intersection of computer vision and children.
+          The Workshop on Computer Vision for Children (CV4CHL) at CVPR 2026 invites submissions presenting innovative research in computer vision that addresses key challenges in child education, psychology, pediatrics, child development, social impact, and ethics. We also welcome broader research exploring the intersection of computer vision and children. Submissions may introduce new models, datasets, benchmarks, or applications. Topics of interest include, but are not limited to: developmental machine learning, computer vision for healthcare, social robotics, vision for education, vision for social impact, and vision for good.
         </p>
 
         <h3>Submission Tracks</h3>
         <ul>
           <li>
-            <strong>Archival Track:</strong> Submissions to this track will be considered for publication in the official CVPR 2026 workshop proceedings. Papers should be between 6 and 8 pages in length for the main text, formatted according to the <a href="https://cvpr.thecvf.com/Conferences/2026/CallForPapers" target="_blank">CVPR 2026 paper submission guidelines</a>. There is no page limit for references or appendices. Selected papers will be presented in an oral session.
+            <strong>Archival Track:</strong> Submissions to this track will be considered for publication in the official CVPR 2026 workshop proceedings. Papers should be between 5 and 8 pages in length for the main text, formatted according to the <a href="https://cvpr.thecvf.com/Conferences/2026/CallForPapers" target="_blank">CVPR 2026 paper submission guidelines</a>. There is no page limit for references or appendices. Three selected papers will be presented in an oral session.
           </li>
           <li>
-            <strong>Non-Archival Track:</strong> We invite submissions of ongoing projects, preliminary results, or work published elsewhere (e.g., on arXiv or at other conferences). Submissions should be limited to 2 pages (as extended abstracts), formatted according to the CVPR 2026 guidelines. These papers will <strong>not</strong> be included in the official proceedings. Accepted papers will be presented during the poster session.
+            <strong>Non-Archival Track:</strong> We invite submissions of ongoing projects, preliminary results, or work published elsewhere (e.g., on arXiv or at other conferences). Submissions should be limited to 4 pages (as extended abstracts), formatted according to the <a href="https://cvpr.thecvf.com/Conferences/2026/CallForPapers" target="_blank">CVPR 2026 paper submission guidelines</a>. These papers will <strong>not</strong> be included in the official proceedings. One of the papers in the non-archival track will be selected for an oral presentation.
           </li>
         </ul>
 
@@ -206,8 +225,8 @@
         <h3>Important Dates (AoE)</h3>
         <ul>
           <li><strong>Paper Submission Start:</strong> TBD</li>
-          <li><strong>Paper Submission Deadline:</strong> TBD</li>
-          <li><strong>Author Notification:</strong> TBD</li>
+          <li><strong>Paper Submission Deadline:</strong> May 20, 2026</li>
+          <li><strong>Author Notification:</strong> May 30, 2026</li>
           <li><strong>Workshop Day:</strong> TBD</li>
         </ul>
 
@@ -223,14 +242,89 @@
     <section id="speakers" class="speakers section">
       <div class="container section-title" data-aos="fade-up">
         <h2>Invited Keynote Speakers</h2>
-        <p>Speaker lineup coming soon. Stay tuned for announcements!</p>
       </div>
+
       <div class="container">
         <div class="row gy-4">
-          <!-- Placeholder for speakers - TBD -->
-          <div class="col-12 text-center">
-            <p><em>Keynote speakers will be announced soon.</em></p>
+
+          <!-- Sanmi Koyejo -->
+          <div class="col-xl-3 col-lg-4 col-md-6" data-aos="fade-up">
+            <div class="member">
+              <img src="assets/img/speakers/SanmiKoyejo.jpg" class="img-fluid" alt="Sanmi Koyejo">
+              <div class="member-info">
+                <div class="member-info-content">
+                  <h4>Sanmi Koyejo</h4>
+                  <span>Stanford University</span>
+                </div>
+              </div>
+            </div>
           </div>
+
+          <!-- Linda Smith -->
+          <div class="col-xl-3 col-lg-4 col-md-6" data-aos="fade-up">
+            <div class="member">
+              <img src="assets/img/speakers/smithlinda.jpg" class="img-fluid" alt="Linda Smith">
+              <div class="member-info">
+                <div class="member-info-content">
+                  <h4>Linda Smith</h4>
+                  <span>Indiana University</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Dima Damen -->
+          <div class="col-xl-3 col-lg-4 col-md-6" data-aos="fade-up">
+            <div class="member">
+              <img src="assets/img/speakers/Dima.jpeg" class="img-fluid" alt="Dima Damen">
+              <div class="member-info">
+                <div class="member-info-content">
+                  <h4>Dima Damen</h4>
+                  <span>University of Bristol and Google DeepMind</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- James M. Rehg -->
+          <div class="col-xl-3 col-lg-4 col-md-6" data-aos="fade-up">
+            <div class="member">
+              <img src="assets/img/speakers/james.png" class="img-fluid" alt="James M. Rehg">
+              <div class="member-info">
+                <div class="member-info-content">
+                  <h4>James M. Rehg</h4>
+                  <span>University of Illinois Urbana-Champaign</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Daniel Rückert -->
+          <div class="col-xl-3 col-lg-4 col-md-6" data-aos="fade-up">
+            <div class="member">
+              <img src="assets/img/speakers/Daniel.jpg" class="img-fluid" alt="Daniel Rückert">
+              <div class="member-info">
+                <div class="member-info-content">
+                  <h4>Daniel Rückert</h4>
+                  <span>Technical University of Munich and Imperial College London</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Jean-Marc Odobez -->
+          <div class="col-xl-3 col-lg-4 col-md-6" data-aos="fade-up">
+            <div class="member">
+              <img src="assets/img/speakers/jeanmarc.jpg" class="img-fluid" alt="Jean-Marc Odobez">
+              <div class="member-info">
+                <div class="member-info-content">
+                  <h4>Jean-Marc Odobez</h4>
+                  <span>Idiap Research Institute and EPFL</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
         </div><!-- /row -->
       </div>
     </section>
@@ -247,17 +341,17 @@
         <div class="tab-content row justify-content-center" data-aos="fade-up" data-aos-delay="200">
           <div role="tabpanel" class="col-lg-9 tab-pane fade show active" id="all">
             <div class="row schedule-item"><div class="col-md-2"><time>12:00–12:15 pm</time></div><div class="col-md-10"><h4>Opening Remarks</h4></div></div>
-            <div class="row schedule-item"><div class="col-md-2"><time>12:15–12:45 pm</time></div><div class="col-md-10"><h4>Keynote 1</h4><p>Speaker TBD</p></div></div>
-            <div class="row schedule-item"><div class="col-md-2"><time>12:45–1:15 pm</time></div><div class="col-md-10"><h4>Keynote 2</h4><p>Speaker TBD</p></div></div>
+            <div class="row schedule-item"><div class="col-md-2"><time>12:15–12:45 pm</time></div><div class="col-md-10"><h4>Keynote 1</h4><p>Dr. Sanmi Koyejo</p></div></div>
+            <div class="row schedule-item"><div class="col-md-2"><time>12:45–1:15 pm</time></div><div class="col-md-10"><h4>Keynote 2</h4><p>Dr. James M. Rehg</p></div></div>
             <div class="row schedule-item"><div class="col-md-2"><time>1:15–1:30 pm</time></div><div class="col-md-10"><h4>Coffee Break & Poster Discussion</h4></div></div>
             <div class="row schedule-item"><div class="col-md-2"><time>1:30–2:15 pm</time></div><div class="col-md-10"><h4>Oral Paper Presentations</h4></div></div>
-            <div class="row schedule-item"><div class="col-md-2"><time>2:15–2:45 pm</time></div><div class="col-md-10"><h4>Keynote 3</h4><p>Speaker TBD</p></div></div>
-            <div class="row schedule-item"><div class="col-md-2"><time>2:45–3:15 pm</time></div><div class="col-md-10"><h4>Keynote 4</h4><p>Speaker TBD</p></div></div>
+            <div class="row schedule-item"><div class="col-md-2"><time>2:15–2:45 pm</time></div><div class="col-md-10"><h4>Keynote 3</h4><p>Dr. Linda Smith</p></div></div>
+            <div class="row schedule-item"><div class="col-md-2"><time>2:45–3:15 pm</time></div><div class="col-md-10"><h4>Keynote 4</h4><p>Dr. Daniel Rückert</p></div></div>
             <div class="row schedule-item"><div class="col-md-2"><time>3:15–3:30 pm</time></div><div class="col-md-10"><h4>Coffee Break & Poster Discussion</h4></div></div>
-            <div class="row schedule-item"><div class="col-md-2"><time>3:30–4:00 pm</time></div><div class="col-md-10"><h4>Keynote 5</h4><p>Speaker TBD</p></div></div>
-            <div class="row schedule-item"><div class="col-md-2"><time>4:00–4:30 pm</time></div><div class="col-md-10"><h4>Keynote 6</h4><p>Speaker TBD</p></div></div>
-            <div class="row schedule-item"><div class="col-md-2"><time>4:30–5:00 pm</time></div><div class="col-md-10"><h4>Panel Discussion: Computer Vision for Pediatrics</h4><p>Panelists TBD</p></div></div>
-            <div class="row schedule-item"><div class="col-md-2"><time>5:00–5:10 pm</time></div><div class="col-md-10"><h4>Summary & Closing Remarks</h4></div></div>
+            <div class="row schedule-item"><div class="col-md-2"><time>3:30–4:00 pm</time></div><div class="col-md-10"><h4>Keynote 5</h4><p>Dr. Dima Damen</p></div></div>
+            <div class="row schedule-item"><div class="col-md-2"><time>4:00–4:30 pm</time></div><div class="col-md-10"><h4>Keynote 6</h4><p>Dr. Jean-Marc Odobez</p></div></div>
+            <div class="row schedule-item"><div class="col-md-2"><time>4:30–5:00 pm</time></div><div class="col-md-10"><h4>Panel Discussion: Computer Vision for Pediatrics</h4><p>Panelists (Dr. Adam R. Cross & Dr. Ismini Lourentzou) and Audiences</p></div></div>
+            <div class="row schedule-item"><div class="col-md-2"><time>5:00–5:10 pm</time></div><div class="col-md-10"><h4>Summary & Closing Remarks</h4><p>Dr. Ismini Lourentzou</p></div></div>
           </div>
         </div>
       </div>
@@ -274,6 +368,20 @@
       <div class="container">
         <div class="row gy-4 five-per-row">
 
+
+          <!-- Yifan Shen -->
+          <div class="col-xl-3 col-lg-4 col-md-6" data-aos="fade-up">
+            <div class="member">
+              <img src="assets/img/organizers/yifan.png" class="img-fluid" alt="Yifan Shen">
+              <div class="member-info">
+                <div class="member-info-content">
+                  <h4><a href="https://shenyifans.github.io/">Yifan Shen</a></h4>
+                  <span>University of Illinois Urbana-Champaign</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
           <!-- Xu Cao -->
           <div class="col-xl-3 col-lg-4 col-md-6" data-aos="fade-up">
             <div class="member">
@@ -287,13 +395,13 @@
             </div>
           </div>
 
-          <!-- Yifan Shen -->
-          <div class="col-xl-3 col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="20">
+          <!-- Xinzhuo Li -->
+          <div class="col-xl-3 col-lg-4 col-md-6" data-aos="fade-up">
             <div class="member">
-              <img src="assets/img/organizers/yifan.png" class="img-fluid" alt="Yifan Shen">
+              <img src="assets/img/organizers/Xinzhuo.jpeg" class="img-fluid" alt="Xinzhuo Li">
               <div class="member-info">
                 <div class="member-info-content">
-                  <h4><a href="https://shenyifans.github.io/">Yifan Shen</a></h4>
+                  <h4><a href="https://www.linkedin.com/in/xinzhuo-li/">Xinzhuo Li</a></h4>
                   <span>University of Illinois Urbana-Champaign</span>
                 </div>
               </div>
